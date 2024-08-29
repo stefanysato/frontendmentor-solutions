@@ -9,7 +9,7 @@
 :root {
    /* active input border */
    --linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
-   /* input errors */   
+   /* input errors */
    --red: hsl(0, 100%, 66%);
 
    --white: hsl(0, 0%, 100%);
@@ -94,7 +94,10 @@ body {
    padding-top: 3rem;
 }
 
-.grid_name, .grid_number, .card_date, .grid_cvc {
+.grid_name,
+.grid_number,
+.card_date,
+.grid_cvc {
    margin-top: 1rem;
 }
 
@@ -172,11 +175,11 @@ input::placeholder {
    text-align: center;
    gap: 1rem;
    padding: 2rem;
-   margin-top: 4rem;
+   padding-top: 5rem;
    margin: auto;
 }
 
-.thankyou_page > img {
+.thankyou_page>img {
    width: 60px;
 }
 
@@ -202,7 +205,9 @@ input::placeholder {
 }
 
 @media (min-width:500px) {
-   .form_section, .cards_container {
+
+   .form_section,
+   .cards_container {
       width: 400px;
       margin: auto;
    }
@@ -240,7 +245,7 @@ input::placeholder {
    }
 
    .card_back {
-      top:480px;
+      top: 480px;
       left: 250px;
       width: 447px;
       height: 242px;
@@ -250,15 +255,15 @@ input::placeholder {
       font-size: 1.8rem;
       margin-bottom: 1rem;
    }
-   
+
    #name {
       font-size: .8rem;
    }
-   
+
    #date {
       font-size: .8rem;
    }
-   
+
    #cvc {
       top: 105px;
       right: 60px;
