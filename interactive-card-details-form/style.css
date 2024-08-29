@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   /* active input border */
+   --linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+   /* input errors */   
+   --red: hsl(0, 100%, 66%);
+
+   --white: hsl(0, 0%, 100%);
+   --light-grayish-violet: hsl(270, 3%, 87%);
+   --dark-grayish-violet: hsl(280, 7%, 36%);
+   --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body {
+   font-family: "Space Grotesk", sans-serif;
+}
+
+.bg_cards_container {
+   background: url('./images/bg-main-mobile.png');
+   background-size: cover;
+   position: relative;
+}
+
+.cards_container {
+   height: 240px;
+   position: relative;
+}
+
+.card_front {
+   background: url('./images/bg-card-front.png');
+   background-size: cover;
+   color: var(--white);
+   width: 290px;
+   height: 160px;
+   padding: 1rem;
+   border-radius: 5px;
+   position: absolute;
+   bottom: -40px;
+   left: 20px;
+   letter-spacing: 2px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.card_back {
+   background: url('./images/bg-card-back.png');
+   background-size: cover;
+   width: 290px;
+   height: 160px;
+   border-radius: 5px;
+   position: absolute;
+   right: 20px;
+   top: 20px;
+}
+
+.card_logo {
+   width: 50px;
+}
+
+#number {
+   font-size: 1.2rem;
+}
+
+#name {
+   text-transform: uppercase;
+   font-size: .6rem;
+}
+
+#date {
+   font-size: .6rem;
+   position: absolute;
+   bottom: 18px;
+   right: 20px;
+}
+
+#cvc {
+   color: var(--white);
+   position: absolute;
+   top: 70px;
+   right: 30px;
+   font-size: 11px;
+}
+
+.form_section {
+   padding: 1.5rem;
+   padding-top: 3rem;
+}
+
+.grid_name, .grid_number, .card_date, .grid_cvc {
+   margin-top: 1rem;
+}
+
+.label {
+   text-transform: uppercase;
+   color: var(--very-dark-violet);
+   font-weight: 800;
+   font-size: .8rem;
+   letter-spacing: 2px;
+}
+
+input {
+   font-family: "Space Grotesk", sans-serif;
+   border: 1px solid var(--light-grayish-violet);
+   width: 100%;
+   height: 40px;
+   border-radius: 5px;
+   padding: 1rem;
+   font-size: 1.1rem;
+   outline: none;
+   font-weight: 500;
+   margin-top: .5rem;
+}
+
+input:focus {
+   border: 1px solid var(--dark-grayish-violet);
+}
+
+input::placeholder {
+   color: var(--light-grayish-violet);
+}
+
+.button {
+   width: 100%;
+   border: none;
+   padding: 1rem;
+   border-radius: 5px;
+   background-color: var(--very-dark-violet);
+   color: var(--white);
+   font-family: "Space Grotesk", sans-serif;
+   font-size: 1.1rem;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+
+.card_information {
+   display: flex;
+   gap: 1rem;
+}
+
+.card_date {
+   width: 50%;
+}
+
+.grid_cvc {
+   width: 50%;
+}
+
+.date_input {
+   display: flex;
+   gap: .5rem;
+}
+
+.blank_error {
+   color: var(--red);
+   font-size: 10px;
+   font-weight: 800;
+}
+
+.thankyou_page {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 1rem;
+   padding: 2rem;
+   margin-top: 4rem;
+   margin: auto;
+}
+
+.thankyou_page > img {
+   width: 60px;
+}
+
+.thankyou_title {
+   text-transform: uppercase;
+   font-size: 1.5rem;
+   font-weight: 600;
+   letter-spacing: .2rem;
+   margin-top: 1rem;
+}
+
+.thankyou_desc {
+   font-weight: 600;
+   color: var(--dark-grayish-violet);
+}
+
+.hide {
+   display: none;
+}
+
+.error {
+   border: 1px solid var(--red);
+}
+
+@media (min-width:500px) {
+   .form_section, .cards_container {
+      width: 400px;
+      margin: auto;
+   }
+}
+
+@media (min-width: 1440px) {
+   .bg_cards_container {
+      background: url('./images/bg-main-desktop.png');
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 480px;
+   }
+
+   .cards_container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+   }
+
+   .form_section {
+      width: 450px;
+   }
+
+   main {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+   }
+
+   .card_front {
+      top: 200px;
+      left: 150px;
+      width: 447px;
+      height: 242px;
+   }
+
+   .card_back {
+      top:480px;
+      left: 250px;
+      width: 447px;
+      height: 242px;
+   }
+
+   #number {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+   }
+   
+   #name {
+      font-size: .8rem;
+   }
+   
+   #date {
+      font-size: .8rem;
+   }
+   
+   #cvc {
+      top: 105px;
+      right: 60px;
+      font-size: 1.2rem;
+   }
+
+   .thankyou_page {
+      width: 400px;
+   }
+
+   .card_logo {
+      width: 80px;
+   }
+}
