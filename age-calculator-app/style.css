@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap');
+
+:root {
+   --purple: hsl(259, 100%, 65%);
+   --light-red: hsl(0, 100%, 67%);
+   --white: hsl(0, 0%, 100%);
+   --off-white: hsl(0, 0%, 94%);
+   --light-grey: hsl(0, 0%, 86%);
+   --smokey-grey: hsl(0, 1%, 44%);
+   --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   background-color: var(--off-white);
+   width: 100vw;
+   padding: 1rem;
+}
+
+main {
+   background-color: var(--white);
+   margin: auto;
+   border-radius: 1rem 1rem 10rem 1rem;
+   margin-top: 5rem;
+}
+
+.form_container {
+   border-bottom: 1px solid var(--light-grey);
+   padding: 3rem 0;
+   margin: 2rem;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   width: 80%;
+}
+
+.date_input {
+   display: flex;
+   flex-direction: column;
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 12px;
+   letter-spacing: 2px;
+   color: var(--smokey-grey);
+   gap: 10px;
+}
+
+input {
+   font-size: 1.5rem;
+   outline: none;
+   padding: 10px;
+   font-weight: 800;
+   border: 1px solid var(--light-grey);
+   border-radius: 5px;
+   width: 100%;
+}
+
+input:focus {
+   border-color: var(--purple);
+}
+
+input::placeholder {
+   color: var(--light-grey);
+}
+
+.form_button {
+   background-color: var(--purple);
+   border: none;
+   border-radius: 50%;
+   position: absolute;
+   bottom: -30px;
+   right: 40%;
+   transition: .5s ease-in-out;
+}
+
+.form_button:hover {
+   cursor: pointer;
+   background-color: var(--off-black);
+}
+
+.form_button_arrow {
+   width: 60px;
+   padding: 10px;
+}
+
+.results {
+   padding: 1rem;
+   padding-bottom: 3rem;
+}
+
+.res_text {
+   font-size: 3rem;
+   font-weight: 800;
+   font-style: italic;
+   line-height: 3.5rem;
+}
+
+.years,
+.days,
+.months {
+   color: var(--purple);
+}
+
+.error_msg {
+   font-size: 11px;
+   text-transform: none;
+   font-weight: 400;
+   font-style: italic;
+   color: var(--light-red);
+}
+
+.error {
+   border: 1px solid var(--light-red);
+}
+
+.error_text {
+   color: var(--light-red);
+}
+
+.hide {
+   display: none;
+}
+
+@media (min-width: 700px) {
+   main {
+      width: 600px;
+   }
+
+   .form_button {
+      right: 0;
+   }
+}
+
+@media (min-width: 1024px) {
+   main {
+      width: 800px;
+   }
+
+   .res_text {
+      font-size: 6rem;
+      line-height: 7rem;
+   }
+
+   .results {
+      padding: 0 2rem;
+      padding-bottom: 4rem;
+   }
+
+   input {
+      width: 150px;
+   }
+
+   .form_container {
+      gap: 2rem;
+      width: 90%;
+   }
+}
