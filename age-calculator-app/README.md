@@ -6,7 +6,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
   - [Built with](#built-with)
 
 ### The challenge
@@ -26,11 +25,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.png)
-
-### Links
-
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/age-calculator-app-JkbemZ74zn)
-- Live Site URL: [Github Pages](https://stefanysato.github.io/age-calculator-app)
 
 ### Built with
 
