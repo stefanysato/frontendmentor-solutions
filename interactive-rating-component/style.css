@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.attribution p {
+  margin-top: 1rem;
+  font-size: .8rem;
+  text-align: center;
+  color:hsl(217, 12%, 63%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color:hsl(217, 12%, 63%)
+}
+
+.rating-page, .thankyou-page {
+  background-color: hsl(213, 19%, 18%);
+  width: 24rem;
+  padding: 2rem;
+  border-radius: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.thankyou-page {
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating-msg {
+  background-color: hsl(214, 19%, 24%);
+  padding: 0.3rem;
+  border-radius: 20px;
+  width: 200px;
+  margin-bottom: 1.2rem;
+  font-size: 0.8rem;
+  color:hsl(25, 97%, 53%);
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.n-btn {
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  background-color: hsl(214, 19%, 24%);
+  color: hsl(217, 12%, 63%);
+}
+
+.n-btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.n-btn:focus {
+  background-color: hsl(217, 12%, 63%);
+  color:hsl(216, 12%, 8%);
+  border: 2px solid hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.submit-btn {
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color:hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.star-box {
+  background-color: hsl(214, 19%, 24%);
+  padding: 1rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.show {
+  display:flex;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+@media (max-width: 390px) {
+  .rating-page, .thankyou-page {
+    width: 20rem;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .rating-page, .thankyou-page {
+    width: 16rem;
+    padding: 1rem;
+  }
+
+  .n-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+  }
+}
